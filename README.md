@@ -1,0 +1,1 @@
+# grafana loki dashboard for nginx
