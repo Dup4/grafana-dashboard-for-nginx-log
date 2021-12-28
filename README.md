@@ -10,6 +10,10 @@ How to enable the `geoip` or `geoip2` module will not be repeated here.
 
 ![](./images/geographic_location_infographics.png)
 
+Before using `geoip2`, you may need to download the corresponding geographic location information database.
+
+Maybe you can use [MaxMind](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data).
+
 You can refer to the [official documentation](https://github.com/leev/ngx_http_geoip2_module#example-usage) for related configuration.
 
 ## Reference
