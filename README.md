@@ -1,8 +1,6 @@
 # grafana loki dashboard for nginx
 
-## Usage
-
-### Enable [Geoip2](https://github.com/leev/ngx_http_geoip2_module)
+## Enable [Geoip2](https://github.com/leev/ngx_http_geoip2_module)
 
 If you want to count the requested geographic location information, you may need to enable the `geoip` or `geoip2` module.
 
@@ -16,15 +14,15 @@ Maybe you can use [MaxMind](https://dev.maxmind.com/geoip/geolite2-free-geolocat
 
 You can refer to the [official documentation](https://github.com/leev/ngx_http_geoip2_module#example-usage) for related configuration.
 
-### Configure Nginx log format
+## Configure Nginx log format
 
 You need to configure the output format of the Nginx log, [here](./etc/log_format.conf) is a configuration for reference.
 
 If you want to add more parameters, you can refer to the [official documentation](http://nginx.org/en/docs/varindex.html).
 
-### Collect Nginx logs to loki
+## Collect Nginx logs to loki
 
-#### Nginx runs in docker
+### Nginx runs in docker
 
 If you use docker to run Nginx, you can use docker's loki plugin to collect Nginx logs.
 
@@ -61,7 +59,7 @@ Second, you can configure the log driver for the container in two ways.
   --log-opt max-file=10
   ```
 
-#### Other
+### Other
 
 Maybe you can use promtail to collect log files.
 
@@ -94,6 +92,10 @@ scrape_configs:
          __path__: /var/log/nginx/*access.log
 
 ```
+
+## Install Grafana Dashboard
+
+[here](./grafana/dashboard.json) is the Grafana Dashboard configuration file.
 
 ## Reference
 
