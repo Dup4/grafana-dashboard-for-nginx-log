@@ -6,8 +6,6 @@ If you want to count the requested geographic location information, you may need
 
 How to enable the `geoip` or `geoip2` module will not be repeated here.
 
-![](./images/geographic_location_infographics.png)
-
 Before using `geoip2`, you may need to download the corresponding geographic location information database.
 
 Maybe you can use [MaxMind](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data).
@@ -96,6 +94,34 @@ scrape_configs:
 ## Install Grafana Dashboard
 
 [here](./grafana/dashboard.json) is the Grafana Dashboard configuration file.
+
+## Screenshot
+
+### Key results
+
+![](./images/key_results.png)
+
+### Request statistics
+
+![](./images/request_statistics.png)
+
+### Acquisition and Behaviour
+
+![](./images/acquisition_and_behaviour_1.png)
+
+![](./images/acquisition_and_behaviour_2.png)
+
+### Geographical information
+
+![](./images/geographic_location_infographics.png)
+
+### Filter
+
+![](./images/filter.png)
+
+You can use regex to filter Server Name, Uri, Request Uri.
+
+This is helpful when you use Nginx to handle the traffic of multiple websites.
 
 ## Reference
 
