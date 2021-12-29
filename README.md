@@ -1,4 +1,4 @@
-# grafana loki dashboard for nginx
+# grafana dashboard for nginx log
 
 ## Enable [Geoip2](https://github.com/leev/ngx_http_geoip2_module)
 
