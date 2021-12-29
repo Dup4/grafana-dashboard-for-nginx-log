@@ -18,14 +18,27 @@
       }
     ]
   },
-  "description": "Loki v2+ showcase using JSON NGINX access logs.",
+  "description": "",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 12559,
   "graphTooltip": 0,
   "id": 11,
-  "iteration": 1640785151384,
-  "links": [],
+  "iteration": 1640798754998,
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "GitHub",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://github.com/Dup4/grafana-dashboard-for-nginx-log"
+    }
+  ],
   "liveNow": false,
   "panels": [
     {
@@ -2899,7 +2912,11 @@
   "refresh": "30s",
   "schemaVersion": 31,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "Nginx",
+    "Log",
+    "JSON"
+  ],
   "templating": {
     "list": [
       {
@@ -3142,5 +3159,5 @@
   "timezone": "",
   "title": "Nginx Log",
   "uid": "Nz6kKgtGj",
-  "version": 103
+  "version": 105
 }
